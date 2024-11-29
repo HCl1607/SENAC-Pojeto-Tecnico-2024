@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono';
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color:#dedede;
+    --second-bg-color:#dedede ;
+    --text-color:#673ab7;
+    --main-color:#673ab7;
+    --second-main-color:#673ab7;  
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--bg-color);
+}
+.box{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background: var(--second-bg-color);
+    border-radius: 8px ;
+    overflow: hidden;
+}   
+.borderline{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.borderline::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent, var(--second-main-color),var(--second-main-color), var(--second-main-color));
+    z-index: 1;
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+    animation-delay: -1.5s;
+}
+.borderline::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent, var(--second-main-color),var(--second-main-color), var(--second-main-color));
+    z-index: 1;
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+    animation-delay: -4.5s;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent, var(--main-color),var(--main-color), var(--main-color));
+    z-index: 1;
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent, var(--main-color),var(--main-color), var(--main-color));
+    z-index: 1;
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+    animation-delay: -3s;
+}   
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box form{
+    position: absolute;
+    inset: 4px;
+    background: white;
+    padding: 50px 40px;
+    z-index: 2;
+    flex-direction: column;
+
+}
+.box form h2{
+    color: var(--text-color);
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1rem;     
+    top: -15px;
+    position: relative;
+}
+.box from .input-box{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+
+}
+.box form .input-box input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    transition: 0.5s;
+    z-index: 10;
+    border-bottom: 2px solid #673ab7;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    margin-bottom: 35px;
+}
+
+.box form .input-box span{
+    position: absolute;
+    left: 40px;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    transition: 0.5s;
+}
+.box form .input-box input:valid ~ span,
+.box form .input-box input:focus ~ span{
+    color: var(--text-color);
+    font-size: 0.75rem;
+    transform: translateY(-21px);
+}
+.box form .links{
+    display: flex;
+    justify-content: space-between;
+
+}
+.box form .links a{
+    margin: 10px 0;
+    font-size: 0.75rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.box form .links a:hover,
+.box form .links a:nth-child(2){
+    color: var(--text-color);
+}
+.box form .input-box input[type = "Submit"]{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #555;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 10px;
+}
+.box form .input-box input[type = "Submit"]:active{
+    opacity: 0.8;
+}
+#btnLogin{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--second-main-color);
+    box-shadow: 0 0 25px var(--second-main-color);
+    font-size: 0.8rem;
+    color: white;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 4rem;
+    right: 15px;
+    position: relative;
+}
+
+#btnLogin:hover{
+    background: var(--second-main-color);
+    color: white;
+    letter-spacing: 0.25rem;
+}

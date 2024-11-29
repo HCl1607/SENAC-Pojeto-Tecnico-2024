@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodology | Pathological</title>
+    <link rel="stylesheet" href="patho.css">
+    <link rel="stylesheet" href="path/to/your/charts.min.css">
+    <script src="https://cdnjs.cloudfare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="Captura_de_tela_2024-10-16_105251-removebg-preview.png">
+</head>
+<body>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="meth.html">Methodology</a></li>
+                <li><a href="regDis.html">Registered Diseases</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="menuBtn">
+        <img src="menu.png" alt="" id="menuImg">  
+    </div>
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menuImg = document.getElementById("menuImg");
+
+            sideNav.style.right = "-250px";
+        menuBtn.onclick = function() {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menuImg.src = "close.png";
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menuImg.src = "menu.png";
+            }
+        }
+    </script>
+<section class="chart1">
+    <section id="introduction">
+        <div class="title-text">
+            <p>GRAPHICS</p>
+            <h1>Impacts Around The World</h1>
+        </div> 
+        <h2>Global Deaths & Effects On The Population from Pathological Diseases</h2>
+<div class="simple-bar-chart">
+   
+  <div class="item" style="--clr: #963D97; --val: 30">
+    <div class="label">Cardiovascular Dis.</div>
+    <div class="value">30%</div>
+  </div>
+
+  <div class="item" style="--clr: #02ff39; --val: 20">
+    <div class="label">Diabetes, Cancêr & Neuro</div>
+    <div class="value">20%</div>
+  </div>
+  
+  <div class="item" style="--clr: #069CDB; --val: 10">
+    <div class="label">Autoimune Cond.</div>
+    <div class="value">10%</div>
+  </div>
+</div>
+</section>
+
+<section class="btns">
+    <div class="btn">
+        <a href="Epidem.html">Epidemiological</a>
+        <a href="Patho.html">Pathological</a>
+        <a href="bio.html">Biological</a>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Chronicles | Pneumonia</title>
+    <link rel="stylesheet" href="bio2.css">
+    <link rel="icon" type="image/x-icon" href="Captura_de_tela_2024-10-16_105251-removebg-preview.png">
+</head>
+<body>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="PgHis.html">History</a></li>
+                <li><a href="meth.html">Methodology<a></li>
+                <li><a href="regDis.html">Registered Diseases</a></li>
+                <li><a href="AboutMe.html">Meet the Author</a></li>
+                <li><a href="login.php">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="menuBtn">
+        <img src="menu.png" alt="" id="menuImg">  
+    </div>
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menuImg = document.getElementById("menuImg");
+
+            sideNav.style.right = "-250px";
+        menuBtn.onclick = function() {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menuImg.src = "close.png";
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menuImg.src = "menu.png";
+            }
+        }
+    </script>
+
+<div class="about-section">
+    <div class="inner-container">
+        <h1>Pneumonia</h1>
+        <p class="text">Pneumonia is an infection that inflames the air sacs in one or both lungs, caused by bacteria, viruses, fungi, or other microorganisms. The air sacs may fill with fluid or pus, leading to breathing difficulties.</p>
+
+        <div class="skills">
+            
+            <span>Cough</span>
+            <br>
+            <span>Fever & Chills</span>
+            <br>
+            <span>Shortness of Breath</span>
+            
+        </div>
+        <a href="index.html" class="btn">Go Back</a>
+    </div>
+  
+</div>
+</body>
+</html>

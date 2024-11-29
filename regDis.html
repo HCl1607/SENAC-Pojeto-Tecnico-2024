@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Chronicles | Registered Diseases</title>
+    <link rel="stylesheet" href="regDis.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="Captura_de_tela_2024-10-16_105251-removebg-preview.png">
+</head>
+<body>
+ 
+  <div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="meth.html">Methodology</a></li>
+            <li><a href="regDis.html">Registered Diseases</a></li>
+          
+        </ul>
+    </nav>
+</div>
+
+<div id="menuBtn">
+    <img src="menu.png" alt="" id="menuImg">  
+</div>
+<script>
+    var menuBtn = document.getElementById("menuBtn");
+    var sideNav = document.getElementById("sideNav");
+    var menuImg = document.getElementById("menuImg");
+
+        sideNav.style.right = "-250px";
+    menuBtn.onclick = function() {
+        if (sideNav.style.right == "-250px") {
+            sideNav.style.right = "0";
+            menuImg.src = "close.png";
+        }
+        else{
+            sideNav.style.right = "-250px";
+            menuImg.src = "menu.png";
+        }
+    }
+</script>
+<section class="chart1">
+<section id="introduction">
+    <div class="title-text">
+        <p>Classification</p>
+        <h1>Registered Diseases</h1>
+    </div> 
+
+    <section>
+        <div class="ag-format-container">
+  <div class="ag-courses_box">
+    
+
+    <div class="ag-courses_item ">
+      <a href="EpideList.html" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Epidemiological
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item">
+      <a href="PathoList.html" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg">
+        </div>
+        <div class="ag-courses-item_title">
+          Pathological
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item">
+      <a href="BioList.html" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title">
+          Biological
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+    </section>
+
+    <section id="footer">
+      <div class="title-text">
+          <p>MEET THE AUTHOR</p>
+          <h1>Contact information</h1>
+      </div>
+      <div class="footer-row">
+          <div class="footer-left">
+              <h2>Henrique C. Lima</h2>
+              <p>Student and Front-End Pogramer</p>
+              <div class="social-links">
+                  <a href="#"><i class='bx bxl-facebook'></i></a>
+                  <a href="#"><i class='bx bxl-instagram'></i></a>
+                  <a href="#"><i class='bx bxl-twitter'></i></a>
+                  <a href="#"><i class='bx bxl-linkedin'></i></a>
+              </div>
+              
+          </div>
+          <div class="footer-right">
+              <h2>Get in touch
+
+              </h2>
+              <p>If you desire to, you can send me a message by clicking the button below. </p>
+              <a href="contact.html">Contact</a>  
+          </div>
+
+      </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #deddde;
+    font-family: 'Arimo', sans-serif;
+    scroll-behavior: smooth;
+}
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    z-index: 2;
+    background: #deddde;
+    transition: .4s ease-in-out;
+    border-left: 6px solid #673ab7;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 40px 10px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: #673ab7;
+    font-family: 'Montserrat',sans-serif;
+    transition: 0.3s ease-in-out;
+   
+}
+nav ul li a:hover{
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-bottom: 2px solid #673ab7;
+}
+#menuBtn{
+    width: 35px;
+    height: 35px;
+    background: #673ab7;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 50px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menuBtn img{
+    height: 26px;
+    width: 26px;
+    margin-top: 15px;
+    position: relative;
+    top: -10px;
+}
+
+.txt{
+    padding: 0;
+    margin: 0;
+}
+.Titulo{
+    color: #673ab7;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 47%;
+}
+.Titulo h1{
+    margin-left: -27%;
+    font-size: 36px;
+}
+.DivTitle{
+    margin-top: 10px; /* Margem acima */
+    width: 50%; /* Largura */
+    margin-left: 25%; /* Margem á esquerda */
+    height: 1px; /* Altura */
+    box-shadow: 2px 2px  15px #673ab7 ; /* Sombreado ao redor */
+}
+.Paragrafo{
+margin-top: 50px;
+padding: 0;
+margin-left: 15px;
+justify-content: center;
+align-items: center;
+/* Período Paleolítico e Mesopotãmico */
+}
+.txt1{
+    margin-bottom: 50px;
+   
+}
+.txt1 h1{
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-left: 33.5%;
+    color: #673ab7;
+}
+.txt1 span{
+    padding: 10px;
+    display: block;
+    color: rgb(35, 35, 49);
+    border-radius: 40px 10px;
+    margin-right: 20px;
+}
+.txt1 span p{
+    background-color: transparent;
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding: 26px;
+    color: rgb(35, 35, 49);
+}
+.parImg1 img{
+    width: 55rem;
+    margin-left: 15%;
+    margin-bottom: 30px;
+    border: 2px solid blueviolet;
+    box-shadow: 2px 2px 15px blueviolet;
+    height: 25rem ;
+}
+/* Egípicios */
+.txt2{
+    margin-bottom: 50px;
+}
+.txt2 h1{
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-left: 32.5%;
+    color: #673ab7;
+}
+.txt2 span{
+    padding: 10px;
+    display: block;
+    color: rgb(35, 35, 49);
+    border-radius: 40px 10px;
+ 
+    margin-right: 3.5px;
+}
+.txt2 span p{
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding: 26px;
+    background-color: transparent;
+    color: rgb(35, 35, 49)  ;
+}
+.parImg2 img{
+    width: 55rem;
+    margin-left: 15%;
+    margin-bottom: 30px;
+    border: 2px solid blueviolet;
+    box-shadow: 2px 2px 15px blueviolet;
+    height: 25rem ;
+}
+/* Grécia */
+.txt3{
+    margin-bottom: 50px;
+}
+.txt3 h1{
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-left: 22.5%;
+    color: #673ab7;
+}
+.txt3 span{
+    padding: 10px;
+    display: block;
+    color: rgb(35, 35, 49);
+    border-radius: 40px 10px;
+  
+    margin-right: 20px;
+}
+.txt3 span p{
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding: 26px;
+    background-color: transparent;
+    color: rgb(35, 35, 49);
+}
+.parImg3 img{
+    width: 55rem;
+    margin-left: 15%;
+    margin-bottom: 30px;
+    border: 2px solid blueviolet;
+    box-shadow: 2px 2px 15px blueviolet;
+    height: 25rem ;
+}
+/* Idade Média */
+.txt4{
+    margin-bottom: 50px;
+}
+.txt4 h1{
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-left: 22.5%;
+    color: #673ab7;
+}
+.txt4 span{
+    padding: 10px;
+    display: block;
+    color: rgb(35, 35, 49);
+    border-radius: 40px 10px;
+
+    margin-right: 20px;
+}
+.txt4 span p{
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding: 26px;
+    color: rgb(35, 35, 49);
+    background-color: transparent ;
+}
+.parImg4 img{
+    width: 55rem;
+    margin-left: 15%;
+    margin-bottom: 30px;
+    border: 2px solid blueviolet;
+    box-shadow: 2px 2px 15px blueviolet;
+    height: 25rem ;
+}
+/* Clero e suas Reformas */
+.txt5{
+    margin-bottom: 50px;
+}
+.txt5 h1{
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-left: 22.5%;
+    color: #673ab7;
+}
+.txt5 span p{
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding: 10px;
+    color: rgb(35, 35, 49);
+    
+}
+.txt5 span{
+    padding: 26px;
+    display: block;
+    color: rgb(35, 35, 49);
+    border-radius: 40px 10px;
+    
+    margin-right: 20px;
+}
+.parImg5 img{
+    width: 55rem;
+    margin-left: 15%;
+    margin-bottom: 30px;
+    border: 2px solid blueviolet;
+    box-shadow: 2px 2px 15px blueviolet;
+    height: 25rem ;
+}
+/* Reforma Psiquiatra na Europa */
+.txt6{
+    margin-bottom: 50px;
+}
+.txt6 h1{
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-left: 22.5%;
+    color: #673ab7;
+}
+.txt6 span{
+    padding: 26px;
+    display: block;
+    color: rgb(35, 35, 49);
+    border-radius: 40px 10px;
+    
+    margin-right: 20px;
+}
+.txt6 span p{
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding: 26px;
+    color: rgb(35, 35, 49);
+    background-color: transparent;
+}
+.parImg6 img{
+    width: 55rem;
+    margin-left: 15%;
+    margin-bottom: 30px;
+    border: 2px solid blueviolet;
+    box-shadow: 2px 2px 15px blueviolet;
+    height: 25rem ;
+}
+
+.txt7{
+    margin-bottom: 50px;
+}
+.txt7 h1{
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-left: 22.5%;
+    color: #673ab7;
+}
+.txt7 span{
+    padding: 21px;
+    display: block;
+    color: rgb(35, 35, 49);
+    border-radius: 40px 10px;
+    margin-right: 20px;
+}
+.txt7 span p{
+margin-bottom: 20px;
+    font-size: 24px;
+    padding: 26px;
+    color: rgb(35, 35, 49);
+    background-color: transparent;
+}
+.parImg7 img{
+    width: 55rem;
+    margin-left: 15%;
+    margin-bottom: 30px;
+    border: 2px solid blueviolet;
+    box-shadow: 2px 2px 15px blueviolet;
+    height: 25rem ;
+}
+
+.txt8{
+    margin-bottom: 50px;
+}
+.txt8 h1{
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-left: 22.5%;
+    color: #673ab7  ;
+}
+.txt8 span{
+    padding: 10px;
+    display: block;
+    color: rgb(35, 35, 49);
+    border-radius: 40px 10px;
+    
+    margin-right: 20px;
+}
+.txt8 span p{
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding: 26px;
+    color: rgb(35, 35, 49);
+    background-color: transparent;
+}
+.parImg8 img{
+    width: 55rem;
+    margin-left: 15%;
+    margin-bottom: 30px;
+    border: 2px solid blueviolet;
+    box-shadow: 2px 2px 15px blueviolet;
+    height: 25rem ;
+}
+.Agradecimentos h2{
+margin-top: 20px;
+margin-left: 41%;
+color: rgb(35, 35, 49);
+font-weight: 500;
+font-size: 30px ;
+}
+.Agradecimentos img{
+    width: 100px;
+    height: 100px;
+    margin-left: 47%;
+    margin-top: 20px;   
+}
+.DivAgrad{
+    margin-top: 35px; /* Margem acima */
+    width: 50%; /* Largura */
+    margin-left: 25%; /* Margem á esquerda */
+    height: 1px; /* Altura */
+    box-shadow: 2px 2px  15px #fff ; /* Sombreado ao redor */
+
+}

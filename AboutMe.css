@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background:#deddde;
+    font-family: 'Arimo', sans-serif;
+    }
+    .about{
+        width: 600px;
+        padding: 78px 0px;
+        color: #242424;
+        align-items: center;
+        margin-left: -220px;
+    
+    }
+    .about img{
+        height: 500px;
+        width: 420px;
+        background: #deddde;
+        border: 3px solid#673ab7;
+        box-shadow: -1px -1px 45px  #673ab7;
+        margin-right: 50px;
+    }
+    
+    .about-text{
+        width: 900px;
+    }
+    .about-text h1{
+        color:  #673ab7;
+        font-size: 60px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        margin-left: 40px; 
+       
+    }
+    .about-text h5{
+        color: #242424;
+        font-size: 21px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+        margin-left: 40px;
+      
+    }
+    .about-text p{
+        color: #242424;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 18px;
+        margin-bottom: 45px;
+        width: 700px;
+        margin-left: 40px;
+      
+    }
+    .main{
+        width: 1130px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 50%;
+    }
+    span{
+        color:  #673ab7;
+        letter-spacing: 8px;
+        display: flex;
+        width: 107%;
+    }
+    
+    #volbtn{
+        background:  #673ab7;
+        color: #242424;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+        transition: .4s;
+        margin-left: 4%; 
+        box-shadow: 2px 2px  15px  #673ab7;
+    }
+    #volbtn:hover{
+        background: #242424;
+        border: 2px solid  #673ab7;
+        cursor: pointer;
+        color: #deddde;
+        
+    }
+    #volbtn2{
+        background:  #673ab7;
+        color: #242424;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+        transition: .4s;
+        margin-left: 8%;
+        margin-top: 0%; 
+        box-shadow: 2px 2px  15px #673ab7;
+    }
+    #volbtn2:hover{
+        background: #242424;
+        border: 2px solid  #673ab7;
+        cursor: pointer;
+        color: #deddde;
+        margin-left: 50px;
+       
+        
+    }
+    

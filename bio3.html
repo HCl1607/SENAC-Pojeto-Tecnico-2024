@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Chronicles | Sickle Cell</title>
+    <link rel="stylesheet" href="bio3.css">
+    <link rel="icon" type="image/x-icon" href="Captura_de_tela_2024-10-16_105251-removebg-preview.png">
+</head>
+<body>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="PgHis.html">History</a></li>
+                <li><a href="meth.html">Methodology<a></li>
+                <li><a href="regDis.html">Registered Diseases</a></li>
+                <li><a href="AboutMe.html">Meet the Author</a></li>
+                <li><a href="login.php">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="menuBtn">
+        <img src="menu.png" alt="" id="menuImg">  
+    </div>
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menuImg = document.getElementById("menuImg");
+
+            sideNav.style.right = "-250px";
+        menuBtn.onclick = function() {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menuImg.src = "close.png";
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menuImg.src = "menu.png";
+            }
+        }
+    </script>
+
+<div class="about-section">
+    <div class="inner-container">
+        <h1>Sickle Cell Disease</h1>
+        <p class="text">Sickle Cell Disease (SCD) is a genetic blood disorder where red blood cells, normally round, become crescent-shaped (sickle-shaped). These misshapen cells can block blood flow and break down prematurely, leading to complications.</p>
+
+        <div class="skills">
+            
+            <span>Severe Pain</span>
+            <br>
+            <span>Fatigue and Weakness</span>
+            <br>
+            <span>Infections</span>
+            
+        </div>
+        <a href="index.html" class="btn">Go Back</a>
+    </div>
+  
+</div>
+</body>
+</html>

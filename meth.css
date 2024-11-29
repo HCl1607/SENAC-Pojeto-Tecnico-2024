@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Arimo', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background: #deddde;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#Introduction{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #f1ecf1;
+}
+.title-text{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 90px;
+    padding-top: 20px;
+    left: 2em;
+    font-family: "Montserrat", "Helvetica Neue";
+}
+
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #673ab7;
+    font-weight: bold;
+    font-family: "Montserrat", "Helvetica Neue";
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.title-text h1{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-family: "Montserrat", "Helvetica Neue";
+}
+.simple-bar-chart{
+    --line-count: 10;
+    --line-color: currentcolor;
+    --line-opacity: 0.25;
+    --item-gap: 12%;
+    --item-default-color: #060606;
+    
+    height: 25rem;
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--item-gap);
+    align-items: end;
+    padding-inline: var(--item-gap);
+    --padding-block: 1.5rem; /*space for labels*/
+    padding-block: var(--padding-block);
+    position: relative;
+    isolation: isolate;
+    border: 2px solid #673ab7;
+    width: 50rem;
+    top: -85px;
+    left: -25px;
+  }
+  
+  .simple-bar-chart::after{
+    content: "";
+    position: absolute;
+    inset: var(--padding-block) 0;
+    z-index: -1;
+    --line-width: 1px;
+    --line-spacing: calc(100% / var(--line-count));
+    background-image: repeating-linear-gradient(to top, transparent 0 calc(var(--line-spacing) - var(--line-width)), var(--line-color) 0 var(--line-spacing));
+    box-shadow: 0 var(--line-width) 0 var(--line-color);
+    opacity: var(--line-opacity);
+    
+  }
+  .simple-bar-chart > .item{
+    height: calc(1% * var(--val));
+    background-color: var(--clr, var(--item-default-color));
+    position: relative;
+    animation: item-height 1s ease forwards;
+    padding: 20px;
+  }
+  @keyframes item-height { from { height: 0 } }
+  
+  .simple-bar-chart > .item > * { position: absolute; text-align: center }
+  .simple-bar-chart > .item > .label { inset: 100% 0 auto 0 }
+  .simple-bar-chart > .item > .value { inset: auto 0 100% 0 }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* demo */
+
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #1D1E22;
+      color: #f0f0f0;
+    }
+  }
+  
+  body > * { max-width: 45rem; margin-inline: auto}
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    z-index: 2;
+    background: #deddde;
+    transition: .4s ease-in-out;
+    border-left: 2px solid #673ab7;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 40px 10px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: #673ab7;
+    font-family: 'Montserrat',sans-serif;
+    transition: 0.3s ease-in-out;
+   
+}
+nav ul li a:hover{
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-bottom: 2px solid #673ab7;
+}
+#menuBtn{
+    width: 35px;
+    height: 35px;
+    background: #673ab7;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 50px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menuBtn img{
+    height: 26px;
+    width: 26px;
+    margin-top: 15px;
+    position: relative;
+    top: -10px;
+}
+
+.btn a{
+    color: #673ab7;
+    text-decoration: none;
+    border: 2px solid #673ab7;
+    padding: 10px; 
+    position: relative;
+    top: -50px;
+    transition: .3s ease-in-out;
+    border-radius: 7rem;
+    left: 10em;
+    margin: 15px;
+}
+.btn a:hover{
+    background-color: #673ab7;
+    color: #fff;
+    box-shadow: 0px 0px 25px #673ab7;
+}

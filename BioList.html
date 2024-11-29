@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Chronicles | Biological</title>
+    <link rel="icon" type="image/x-icon" href="Captura_de_tela_2024-10-16_105251-removebg-preview.png">
+    <link rel="stylesheet" href="Patholist.css">
+</head>
+<body>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="PgHis.html">History</a></li>
+                <li><a href="meth.html">Methodology<a></li>
+                <li><a href="regDis.html">Registered Diseases</a></li>
+                <li><a href="AboutMe.html">Meet the Author</a></li>
+                <li><a href="login.php">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="menuBtn">
+        <img src="menu.png" alt="" id="menuImg">  
+    </div>
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menuImg = document.getElementById("menuImg");
+
+            sideNav.style.right = "-250px";
+        menuBtn.onclick = function() {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menuImg.src = "close.png";
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menuImg.src = "menu.png";
+            }
+        }
+    </script>
+
+    <section>
+        <div class="title-text">
+            <p>Registered Diseases</p>
+            <h1>Biological</h1>
+        </div>
+    </section>
+    <section>
+        <ul class="rolldown-list" id="myList">
+            <li><a href="bio1.html">Migrane</a></li>
+            <li><a href="bio2.html">Pneumonia</a></li>
+            <li><a href="bio3.html">Sickle Cell Disease</a></li>
+            
+        </ul> 
+          
+         
+    </section>
+     
+
+
+    
+    
+</body>
+</html>

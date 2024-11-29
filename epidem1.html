@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Chronicles | Tuberculosis</title>
+    <link rel="stylesheet" href="epidem1.css">
+</head>
+<body>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="PgHis.html">History</a></li>
+                <li><a href="meth.html">Methodology</a></li>
+                <li><a href="regDis.html">Registered Diseases<a></li>
+                <li><a href="contact.html">Meet the Author</a></li>
+                <li><a href="login.php">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="menuBtn">
+        <img src="menu.png" alt="" id="menuImg">  
+    </div>
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menuImg = document.getElementById("menuImg");
+
+            sideNav.style.right = "-250px";
+        menuBtn.onclick = function() {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menuImg.src = "close.png";
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menuImg.src = "menu.png";
+            }
+        }
+    </script>
+
+<div class="about-section">
+    <div class="inner-container">
+        <h1>Turbeculosis</h1>
+        <p class="text">Tuberculosis (TB) is a contagious bacterial infection caused by Mycobacterium tuberculosis, primarily affecting the lungs but potentially impacting other parts of the body. It spreads through airborne droplets when an infected person coughs, sneezes, or speaks.</p>
+
+        <div class="skills">
+            
+            <span>Persistent cough</span>
+            <br>
+            <span>Chest pain</span>
+            <br>
+            <span>Fever and night sweats</span>
+        </div>
+        <a href="index.html" class="btn">Go Back</a>
+    </div>
+  
+</div>
+</body>
+</html>
